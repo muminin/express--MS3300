@@ -1,0 +1,45 @@
+GET http://localhost:1234/test
+
+###
+
+POST http://localhost:1234/post/new
+Content-Type: application/json
+
+{
+  "title": "First Post",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+}
+
+###
+POST http://localhost:1234/user/registration
+Content-Type: application/json
+
+{
+  "email": "niman@mail.com",
+  "password": "password"
+}
+
+###
+POST http://localhost:1234/user/registration
+Content-Type: application/json
+
+{
+  "email": "niman2@mail.com",
+  "password": "password"
+}
+
+###
+DELETE  http://localhost:1234/user/delete/62454cf0b76ba737f3256781
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbWFuQG1haWwuY29tIiwidXNlcklkIjoiNjI0NTQ1ZDc0NTJhZjdhNzg5MWM3MmZmIiwiaWF0IjoxNjQ4NzE0MTI4LCJleHAiOjE2NDg3MTc3Mjh9.QCEQFVDY9LGNQms8ouRjofbYGBow_8riLnEi-ZvS01U
+
+###
+POST  http://localhost:1234/user/login
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbWFuQG1haWwuY29tIiwidXNlcklkIjoiNjI0NTQ1ZDc0NTJhZjdhNzg5MWM3MmZmIiwiaWF0IjoxNjQ4NzA4ODUzLCJleHAiOjE2NDg3MTI0NTN9.waYP_zJZwDF4U8BTsqo-X02xfyacLqcCxCk_O69u664
+
+{
+    "email": "niman@mail.com",
+    "password": "password"
+}
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbWFuQG1haWwuY29tIiwidXNlcklkIjoiNjI0NTQ1ZDc0NTJhZjdhNzg5MWM3MmZmIiwiaWF0IjoxNjQ4NzA4ODUzLCJleHAiOjE2NDg3MTI0NTN9.waYP_zJZwDF4U8BTsqo-X02xfyacLqcCxCk_O69u664
