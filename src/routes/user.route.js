@@ -46,7 +46,7 @@ router.post('/user/registration', (req, res) => {
 
 // * Delete User
 router.delete('/user/delete/:userId', checkAuth, (req, res) => {
-    User.remove({ _id: req.params.userId }).exec().then(response => {
+    User.deleteOne({ _id: req.params.userId }).exec().then(response => {
         res.status(StatusCodes.OK).json({
             message: 'User deleted',
         });
